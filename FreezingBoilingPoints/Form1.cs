@@ -18,7 +18,8 @@ namespace FreezingBoilingPoints
         }
 
         private void btnShowEffect_Click(object sender, EventArgs e)
-        {
+        {//I had to do these if-else statements for each one to determine
+            //the appropriate steps needed to display the output.
             double temperature;
             temperature = Convert.ToDouble(txtBoxInput.Text);
             if (temperature <= -173)
@@ -71,7 +72,7 @@ namespace FreezingBoilingPoints
             }
         }
 
-        private void btnClear_Click(object sender, EventArgs e)
+        private void btnClear_Click(object sender, EventArgs e)//Clear everything back the way it was when you start program
         {
             txtBoxInput.Clear();
             txtBoxEthyl.Clear();
@@ -80,7 +81,7 @@ namespace FreezingBoilingPoints
             txtBoxWater.Clear();
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)//Terminates the program and closes the window when clicked
         {
             this.Close();
         }
